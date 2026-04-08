@@ -36,108 +36,141 @@
     <header class="site-header">
       <a class="brand" href="index.html">Alex Patterson</a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="index.html#work">Work</a>
+        <a href="index.html">Homepage</a>
+        <a href="about.html">About</a>
         <a href="resume.html">Resume</a>
-        <a href="index.html#about">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="persona-evolution.html">Professional Persona Evolution</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </header>
 
     <main id="home">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Portfolio Homepage</p>
-          <h1>Designing focused digital experiences with clarity, motion, and intent.</h1>
-          <p class="lede">
-            I build polished web experiences that feel sharp, modern, and easy to navigate.
-            Navy leads the system, green accents the important moments, and the layout stays clean from mobile to desktop.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">View Work</a>
-            <a class="button button-secondary" href="#contact">Get in Touch</a>
+      <section class="hero-intro">
+        <h1 class="hero-name">Alex Patterson</h1>
+        <p class="hero-tagline">Business Communications & Creative Professional</p>
+      </section>
+
+      <section class="hero-showcase">
+        <div class="headshot-container">
+          <div class="headshot-placeholder">
+            <p>📸</p>
+            <p class="headshot-text">Replace with your headshot</p>
           </div>
-          <div class="hero-metrics" aria-label="Highlights">
-            <div>
-              <strong>6+</strong>
-              <span>featured projects</span>
-            </div>
-            <div>
-              <strong>12</strong>
-              <span>weeks to launch</span>
-            </div>
-            <div>
-              <strong>100%</strong>
-              <span>responsive layouts</span>
-            </div>
-          </div>
+          <!-- Or use an image tag: <img src="headshot.jpg" alt="Alex Patterson" /> -->
         </div>
 
-        <aside class="hero-card" aria-label="Profile summary">
-          <div class="profile-badge">AP</div>
-          <h2>Alex Patterson</h2>
-          <p>Creative developer and portfolio designer focused on crisp presentation, readable structure, and memorable first impressions.</p>
-          <ul class="profile-list">
-            <li>Based in the UK</li>
-            <li>Available for freelance</li>
-            <li>Open to collaborations</li>
-          </ul>
-        </aside>
+        <div class="overview-content">
+          <div class="overview-item">
+            <h2>Overview</h2>
+            <p>I'm a communicator and creative problem-solver focused on clarity, teamwork, and delivering polished results. Throughout my professional journey, I've built a reputation for strong writing, engaging presentations, and keeping groups organized and moving forward.</p>
+          </div>
+
+          <div class="overview-item">
+            <h2>Quick Facts</h2>
+            <ul class="facts-list">
+              <li>Based in the UK</li>
+              <li>University of Arizona, Eller College of Management</li>
+              <li>Available for projects and collaboration</li>
+              <li>Strengths in business communications and teamwork</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">My Story</p>
+          <h2>Built on clarity, consistency, and growth.</h2>
+        </div>
+        <div class="story-content">
+          <p>
+            I started as a student focused on completing assignments well. Through upper-division coursework, group projects, and presentations, I became more intentional about audience, clarity, and follow-through. I now approach communication as a skill that shapes trust.
+          </p>
+          <p>
+            I've learned that credibility comes from consistency: showing up prepared, asking good questions, and following through on commitments. When I'm part of a team, people notice that I listen carefully, keep projects organized, and help others do their best work.
+          </p>
+          <p>
+            This site reflects who I am: someone who values clear structure, polished presentation, and making the next step obvious for whoever is reading or listening.
+          </p>
+        </div>
       </section>
 
       <section class="section" id="work">
         <div class="section-heading">
           <p class="eyebrow">Selected Work</p>
-          <h2>Projects with a strong visual point of view.</h2>
+          <h2>Projects and samples that show my approach.</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card featured">
-            <p class="project-tag">Featured Project</p>
-            <h3>Studio North</h3>
-            <p>A bold agency landing page with dark surfaces, clean spacing, and green interaction highlights.</p>
+            <p class="project-tag">Presentation</p>
+            <h3>Team Strategy Presentation</h3>
+            <p>Organized and structured a complex business topic for a class audience. Slide flow, timing, and delivery were polished and easy to follow.</p>
             <div class="project-footer">
-              <span>Brand site</span>
-              <span>2026</span>
+              <span>Class Project</span>
+              <span>2025</span>
             </div>
           </article>
 
           <article class="project-card">
-            <p class="project-tag">Case Study</p>
-            <h3>Pulse Metrics</h3>
-            <p>An analytics dashboard homepage built to communicate trust, speed, and data clarity at a glance.</p>
+            <p class="project-tag">Written Work</p>
+            <h3>Business Analysis Memo</h3>
+            <p>Turned research into a clear memo that solved a workplace issue. Organized around problem, evidence, recommendation, and next steps.</p>
           </article>
 
           <article class="project-card">
-            <p class="project-tag">Case Study</p>
-            <h3>Greenline Studio</h3>
-            <p>A portfolio concept with cinematic hero treatment, layered cards, and simple calls to action.</p>
+            <p class="project-tag">Leadership</p>
+            <h3>Project Coordination</h3>
+            <p>Kept a group on schedule across overlapping assignments. Created systems for tracking deadlines, clarifying roles, and reducing last-minute stress.</p>
           </article>
         </div>
-      </section>
 
-      <section class="section split-section" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Built to feel premium without losing usability.</h2>
-        </div>
-        <div class="split-content">
-          <p>
-            This homepage is structured for a personal portfolio: a quick introduction, a set of selected projects, a short bio,
-            and a contact prompt that makes the next step obvious.
-          </p>
-          <p>
-            The palette stays anchored in deep navy with green used sparingly for emphasis, links, and active states. That keeps the page readable,
-            sharp, and professional while still giving it personality.
-          </p>
+        <div class="view-more">
+          <a class="button button-secondary" href="resume.html">View Full Resume →</a>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Want to build something clean and memorable?</h2>
+      <section class="section" id="professional-persona-video">
+        <div class="video-hero">
+          <div class="video-header">
+            <p class="eyebrow">Professional Persona Video</p>
+            <h2>My Growth Story & Professional Journey</h2>
+            <p class="video-intro">
+              Learn more about my growth story and journey as a young professional. The video below was created for my BCOM 314 course at the Eller College of Management.
+            </p>
+          </div>
+
+          <div class="detail-item">
+            <h2>Objective</h2>
+            <p>
+              This video explores my professional persona, including my strengths, values, growth areas, and vision for my career as a communicator. It reflects the lessons learned through teamwork, presentations, and self-reflection throughout my academic journey.
+            </p>
+          </div>
+
+          <div class="video-container-section">
+            <div class="video-player">
+              <div class="video-placeholder">
+                <p>🎬</p>
+                <p class="video-placeholder-text">Your video will appear here</p>
+                <p class="video-instruction">Add your video by replacing the placeholder with a video tag or embedded iframe</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <a class="button button-primary" href="mailto:alex@example.com">alex@example.com</a>
+      </section>
+
+      <section class="section connect-section" id="contact">
+        <div class="connect-header">
+          <p class="eyebrow">Connect</p>
+          <h2>Ready to work together or chat?</h2>
+          <p class="connect-tagline">I'm available for projects, collaborations, and interesting conversations.</p>
+        </div>
+        <div class="connect-actions">
+          <a class="button button-primary" href="mailto:alex.patterson@example.com">Email Me</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button button-secondary" href="resume.html">Download Resume</a>
+        </div>
       </section>
     </main>
 
