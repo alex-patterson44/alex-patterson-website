@@ -3,24 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const pdfViewer = document.getElementById('pdfViewer');
   const pdfPlaceholder = document.getElementById('pdfPlaceholder');
 
-  // Check if PDF exists and show/hide placeholder
-  const checkPdfLoaded = () => {
-    // Try to detect if PDF iframe loaded successfully
-    try {
-      if (pdfViewer.contentDocument || pdfViewer.contentWindow?.document) {
-        pdfPlaceholder.style.display = 'none';
-        pdfViewer.style.display = 'block';
-      }
-    } catch (e) {
-      // PDF not available, keep placeholder visible
-      pdfViewer.style.display = 'none';
-      pdfPlaceholder.style.display = 'flex';
-    }
-  };
+  // Show the PDF once the iframe has loaded.
+  // Cross-origin checks can throw in production and incorrectly hide a valid PDF.
+  if (pdfViewer && pdfPlaceholder) {
+    pdfViewer.style.display = 'block';
+    pdfPlaceholder.style.display = 'none';
 
-  // Check on load
-  pdfViewer.addEventListener('load', checkPdfLoaded);
-  setTimeout(checkPdfLoaded, 1000);
+    pdfViewer.addEventListener('load', () => {
+      pdfViewer.style.display = 'block';
+      pdfPlaceholder.style.display = 'none';
+    });
+  }
 
   // Fullscreen functionality
   if (fullscreenBtn) {
