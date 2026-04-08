@@ -1,156 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Patterson | Professional Reputation Portfolio</title>
-  <meta name="description" content="Professional reputation portfolio for Alex Patterson, with biography, resume, portfolio work samples, and persona evolution reflections.">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="site-shell header-inner">
-      <a class="brand" href="index.html">
-        <div class="brand-mark">AP</div>
-        <div class="brand-text">
-          <strong>Alex Patterson</strong>
-          <span>Business Communications Portfolio</span>
-        </div>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="persona.html">Persona Evolution</a>
-        <a href="portfolio.html">Portfolio</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alex Patterson portfolio homepage" />
+    <title>Alex Patterson | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      if (
+        window.ResizeObserver &&
+        (!window.PerformanceObserver ||
+          !PerformanceObserver.supportedEntryTypes ||
+          PerformanceObserver.supportedEntryTypes.indexOf('paint') === -1)
+      ) {
+        new ResizeObserver(function (entries, observer) {
+          entries.some(function (entry) {
+            var contentRect = entry.contentRect;
+            if (contentRect.width > 0 && contentRect.height > 0) {
+              requestAnimationFrame(function (now) {
+                window.wixFirstPaint = now;
+                dispatchEvent(new CustomEvent('wixFirstPaint'));
+              });
+              observer.disconnect();
+              return true;
+            }
+          });
+        }).observe(document.body);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg-orb bg-orb-left"></div>
+    <div class="bg-orb bg-orb-right"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home">Alex Patterson</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="site-shell hero-grid">
-        <article class="hero-copy">
-          <span class="eyebrow">Professional overview</span>
-          <div class="hero-bio">
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio Homepage</p>
+          <h1>Designing focused digital experiences with clarity, motion, and intent.</h1>
+          <p class="lede">
+            I build polished web experiences that feel sharp, modern, and easy to navigate.
+            Navy leads the system, green accents the important moments, and the layout stays clean from mobile to desktop.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">View Work</a>
+            <a class="button button-secondary" href="#contact">Get in Touch</a>
+          </div>
+          <div class="hero-metrics" aria-label="Highlights">
             <div>
-              <h1>Alex Patterson</h1>
-              <div class="overview-title">Business communications student and emerging professional</div>
+              <strong>6+</strong>
+              <span>featured projects</span>
             </div>
-            <p class="summary">I’m someone who builds trust through strong communication, organized teamwork, and a calm, thoughtful approach to projects. This site is a simple view of who I am, what I’ve learned, and how I’m preparing for the next step in my professional life.</p>
-            <p class="summary">If you want a quick tour, start with my <a href="portfolio.html">work samples</a> or read my <a href="persona.html">persona evolution</a> page to see how I’ve grown through class projects, presentations, and team experiences.</p>
-            <div class="hero-actions">
-              <a class="button primary" href="portfolio.html">View work samples</a>
-              <a class="button secondary" href="resume.html">Open resume page</a>
+            <div>
+              <strong>12</strong>
+              <span>weeks to launch</span>
             </div>
-            <div class="link-row">
-              <a class="chip" href="mailto:alex.patterson@example.com">Email me</a>
-              <a class="chip" href="https://www.linkedin.com/in/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <div>
+              <strong>100%</strong>
+              <span>responsive layouts</span>
             </div>
           </div>
-        </article>
+        </div>
 
-        <aside class="hero-aside">
-          <div class="portrait-card">
-            <div class="portrait-frame" aria-label="Headshot area">
-              <div class="portrait-mark">
-                <strong>AP</strong>
-                <span>Headshot</span>
-              </div>
-            </div>
-            <div class="portrait-note">Replace this panel with your headshot image when you have one. The design is already set up to make that photo the visual anchor of the homepage.</div>
-          </div>
-          <div class="panel">
-            <h2>What to explore first</h2>
-            <ul class="highlight-list">
-              <li>My resume page for a straightforward summary of experience and strengths.</li>
-              <li>My portfolio page for STAR-based work samples you can open and read quickly.</li>
-              <li>My persona evolution page for the growth story behind the resume.</li>
-            </ul>
-          </div>
+        <aside class="hero-card" aria-label="Profile summary">
+          <div class="profile-badge">AP</div>
+          <h2>Alex Patterson</h2>
+          <p>Creative developer and portfolio designer focused on crisp presentation, readable structure, and memorable first impressions.</p>
+          <ul class="profile-list">
+            <li>Based in the UK</li>
+            <li>Available for freelance</li>
+            <li>Open to collaborations</li>
+          </ul>
         </aside>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="site-shell section-card">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Professional biography</span>
-            <h2>My story in a nutshell</h2>
-          </div>
-          <p>I do my best work when I can bring structure to ideas, help a team move forward, and communicate in a way that makes an audience want to keep listening. Over time, I have learned that credibility is built through consistency: showing up prepared, asking good questions, and following through.</p>
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects with a strong visual point of view.</h2>
         </div>
-        <div class="card-grid">
-          <article class="feature-card">
-            <h3>Growth story</h3>
-            <p>I started as a student focused mainly on completing assignments. Through upper-division coursework, group projects, and presentations, I have become more intentional about audience, clarity, and follow-through. I now approach communication as a skill that shapes trust.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Audience focus</h3>
-            <p>This portfolio speaks directly to instructors, classmates, and future professional contacts. It invites you to explore my work, see how I solve problems, and contact me if you want a communicator who is prepared, adaptable, and easy to work with.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Call to action</h3>
-            <p>Use the navigation to move between my resume, reflection page, and work samples. Each page adds a different part of the story so you can see both the results I have produced and the habits that shaped them.</p>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="site-shell section-card">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Credibility</span>
-            <h2>What others notice</h2>
-          </div>
-          <p>Testimonials and professional feedback help show not only what I submit, but how I show up in a team and in class settings.</p>
-        </div>
-        <div class="card-grid">
-          <article class="quote-card">
-            <h3>Peer feedback</h3>
-            <blockquote>“Alex keeps the group organized, listens carefully, and makes complex tasks feel manageable.”</blockquote>
-            <footer>Sample 360-style feedback for class use</footer>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <p class="project-tag">Featured Project</p>
+            <h3>Studio North</h3>
+            <p>A bold agency landing page with dark surfaces, clean spacing, and green interaction highlights.</p>
+            <div class="project-footer">
+              <span>Brand site</span>
+              <span>2026</span>
+            </div>
           </article>
-          <article class="quote-card">
-            <h3>Project response</h3>
-            <blockquote>“The final presentation was clear, well-paced, and matched the audience’s expectations from start to finish.”</blockquote>
-            <footer>Sample presentation reflection</footer>
-          </article>
-          <article class="quote-card">
-            <h3>Professional tone</h3>
-            <blockquote>“The writing is organized, direct, and respectful of the reader’s time.”</blockquote>
-            <footer>Sample instructor feedback</footer>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section id="contact" class="section">
-      <div class="site-shell section-card">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Contact</span>
-            <h2>Reach out the professional way</h2>
-          </div>
-          <p>For safety, this site uses email and LinkedIn only. No physical address or phone number is listed.</p>
-        </div>
-        <div class="section-actions">
-          <a class="button primary" href="mailto:alex.patterson@example.com">Email Alex Patterson</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/" target="_blank" rel="noreferrer">Visit LinkedIn</a>
-          <a class="button secondary" href="portfolio.html">See work samples</a>
-        </div>
-      </div>
-    </section>
-  </main>
+          <article class="project-card">
+            <p class="project-tag">Case Study</p>
+            <h3>Pulse Metrics</h3>
+            <p>An analytics dashboard homepage built to communicate trust, speed, and data clarity at a glance.</p>
+          </article>
 
-  <footer class="footer">
-    <div class="site-shell footer-inner">
-      <span>Alex Patterson Business Communications Portfolio</span>
-      <span>Green and navy visual theme</span>
-    </div>
-  </footer>
-</body>
+          <article class="project-card">
+            <p class="project-tag">Case Study</p>
+            <h3>Greenline Studio</h3>
+            <p>A portfolio concept with cinematic hero treatment, layered cards, and simple calls to action.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Built to feel premium without losing usability.</h2>
+        </div>
+        <div class="split-content">
+          <p>
+            This homepage is structured for a personal portfolio: a quick introduction, a set of selected projects, a short bio,
+            and a contact prompt that makes the next step obvious.
+          </p>
+          <p>
+            The palette stays anchored in deep navy with green used sparingly for emphasis, links, and active states. That keeps the page readable,
+            sharp, and professional while still giving it personality.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Want to build something clean and memorable?</h2>
+        </div>
+        <a class="button button-primary" href="mailto:alex@example.com">alex@example.com</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Alex Patterson</p>
+      <p>Portfolio homepage concept in navy and green.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
