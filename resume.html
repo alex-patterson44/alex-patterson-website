@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alex Patterson resume" />
+    <title>Resume | Alex Patterson</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb bg-orb-left"></div>
+    <div class="bg-orb bg-orb-right"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Alex Patterson</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="resume-main">
+      <section class="resume-hero">
+        <div class="resume-header">
+          <p class="eyebrow">Professional Background</p>
+          <h1>Resume</h1>
+        </div>
+
+        <div class="pdf-viewer-section">
+          <div class="pdf-container">
+            <iframe
+              id="pdfViewer"
+              class="pdf-iframe"
+              src="resume.pdf"
+              title="Resume PDF"
+            ></iframe>
+            <div class="pdf-placeholder" id="pdfPlaceholder">
+              <p>📄 PDF resume will appear here</p>
+              <p class="pdf-placeholder-text">Place your <code>resume.pdf</code> file in the project root to display it here.</p>
+            </div>
+          </div>
+
+          <div class="pdf-controls">
+            <a
+              class="button button-secondary"
+              href="resume.pdf"
+              download="Alex-Patterson-Resume.pdf"
+              title="Download resume PDF"
+            >
+              ↓ Download PDF
+            </a>
+            <button
+              class="button button-secondary"
+              id="fullscreenBtn"
+              title="View in fullscreen"
+            >
+              ⛶ View Larger
+            </button>
+            <a
+              class="button button-secondary"
+              href="mailto:?subject=Alex Patterson Resume&body=Here's my resume"
+              title="Share via email"
+            >
+              ⤳ Share
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-overview">
+        <div class="overview-content">
+          <div class="overview-item">
+            <h2>Contact</h2>
+            <p>alex.patterson@example.com | LinkedIn: linkedin.com/in/</p>
+            <p class="muted-text">Physical address and phone number intentionally omitted for safety.</p>
+          </div>
+
+          <div class="overview-item">
+            <h2>Education</h2>
+            <p><strong>University of Arizona, Eller College of Management</strong></p>
+            <p class="muted-text">Business Communications and related upper-division coursework</p>
+          </div>
+
+          <div class="overview-item">
+            <h2>Experience</h2>
+            <p><strong>Project collaboration, presentations, and team-based course work</strong></p>
+            <p class="muted-text">
+              Use this section for internships, campus jobs, leadership roles, and freelance or volunteer work.
+            </p>
+          </div>
+
+          <div class="overview-item">
+            <h2>Selected Strengths</h2>
+            <div class="strengths-grid">
+              <span class="strength-badge">Business writing</span>
+              <span class="strength-badge">Presentations</span>
+              <span class="strength-badge">Teamwork</span>
+              <span class="strength-badge">Project management</span>
+              <span class="strength-badge">Audience awareness</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-cta">
+        <div>
+          <p class="eyebrow">Next Steps</p>
+          <h2>Ready to connect?</h2>
+        </div>
+        <a class="button button-primary" href="index.html#contact">Get in Touch</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Alex Patterson</p>
+      <p>Professional resume and portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="resume.js"></script>
+  </body>
+</html>
