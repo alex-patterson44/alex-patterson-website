@@ -418,7 +418,7 @@ h1 {
   background: linear-gradient(180deg, rgba(15, 31, 57, 0.86), rgba(9, 18, 34, 0.92));
   border: 1px solid var(--line);
   border-radius: 2rem;
-  padding: 1.35rem;
+  padding: 1.35rem 1.35rem 1.35rem 0;
   box-shadow: var(--shadow);
 }
 
@@ -426,7 +426,8 @@ h1 {
   display: grid;
   gap: 1.5rem;
   max-width: none;
-  padding: 1.35rem;
+  padding: 0;
+  padding-left: 1.35rem;
 }
 
 .story-section .section-heading {
