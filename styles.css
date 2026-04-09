@@ -1101,6 +1101,10 @@ body.resume-page .site-footer {
   grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.9fr);
 }
 
+.project-item-text-only {
+  grid-template-columns: 1fr;
+}
+
 .project-item-media {
   display: flex;
 }
@@ -1120,20 +1124,88 @@ body.resume-page .site-footer {
   width: 100%;
   min-height: 220px;
   border: 1px dashed rgba(57, 217, 138, 0.35);
-  border-radius: 1.2rem;
   background: rgba(57, 217, 138, 0.09);
   display: grid;
   place-items: center;
   padding: 0.8rem;
 }
 
-.project-image-placeholder p {
-  margin: 0;
+.project-image-fill {
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-image-fill img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  display: block;
+}
+
+#project-1 .project-image-fill img {
+  object-position: center 20%;
+}
+
+.presentation-viewer {
+  position: relative;
+  min-height: 260px;
+  border: 1px solid var(--line);
+  background: rgba(7, 17, 31, 0.72);
+}
+
+.presentation-frame {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  border: none;
+  display: block;
+}
+
+.presentation-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(57, 217, 138, 0.45);
+  background: rgba(7, 17, 31, 0.86);
   color: var(--accent);
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.presentation-arrow:hover,
+.presentation-arrow:focus-visible {
+  background: rgba(57, 217, 138, 0.22);
+}
+
+.presentation-arrow-left {
+  left: 0.7rem;
+}
+
+.presentation-arrow-right {
+  right: 0.7rem;
+}
+
+.presentation-status {
+  position: absolute;
+  left: 50%;
+  bottom: 0.6rem;
+  transform: translateX(-50%);
+  margin: 0;
+  border-radius: 999px;
+  border: 1px solid rgba(57, 217, 138, 0.35);
+  background: rgba(7, 17, 31, 0.84);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.25rem 0.7rem;
+  letter-spacing: 0.03em;
 }
 
 .skills-grid {
@@ -1166,6 +1238,21 @@ body.resume-page .site-footer {
 .skill-box li {
   color: var(--text);
   font-size: 0.93rem;
+}
+
+#project-3 .project-3-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.55fr);
+  gap: 0.9rem;
+  align-items: start;
+}
+
+#project-3 .project-3-text p {
+  margin: 0;
+}
+
+#project-3 .project-3-text .project-tag {
+  margin-bottom: 0.6rem;
 }
 
 /* About Page Styles */
@@ -1487,6 +1574,15 @@ body.resume-page .site-footer {
   .project-item.reverse,
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  #project-3 .project-3-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .presentation-frame,
+  .presentation-viewer {
+    min-height: 220px;
   }
 
   .site-header,
