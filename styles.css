@@ -990,6 +990,17 @@ body.resume-page .site-footer {
   line-height: 1.75;
 }
 
+.evo-centered-image {
+  display: block;
+  width: min(100%, 640px);
+  height: auto;
+  margin: 0 auto 1rem;
+  border: 1px solid rgba(57, 217, 138, 0.25);
+  border-radius: 1rem;
+  background: rgba(57, 217, 138, 0.08);
+  padding: 0.35rem;
+}
+
 .evo-quote {
   margin: 1rem 0 0;
   padding: 1rem 1.1rem;
@@ -1036,6 +1047,42 @@ body.resume-page .site-footer {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
+}
+
+.evo-image-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(57, 217, 138, 0.25);
+  border-radius: 1rem;
+  background: rgba(57, 217, 138, 0.08);
+  padding: 0.35rem;
+}
+
+.evo-image-link {
+  display: block;
+}
+
+.evo-image-link > img,
+.evo-image-row > img {
+  width: 100%;
+  max-width: 100%;
+  min-height: 160px;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0.7rem;
+  background: transparent;
+  padding: 0;
+  cursor: zoom-in;
+}
+
+.evo-image-figure figcaption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
 }
 
 .evo-image-row.three {
