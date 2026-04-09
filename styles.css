@@ -1714,6 +1714,10 @@ body.resume-page .site-footer {
     max-width: 12ch;
   }
 
+  .projects-hero h1 {
+    max-width: 18ch;
+  }
+
   .hero-showcase {
     gap: 2rem;
     margin-bottom: 3rem;
