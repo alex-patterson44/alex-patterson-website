@@ -1340,23 +1340,24 @@ body.resume-page .site-footer {
 }
 
 .fun-fact-bowling {
-  transform: scale(1.5) translateY(-8%);
+  transform: scale(1.2) translateY(-4%);
   transform-origin: center top;
 }
 
 .fun-fact-sisters {
-  transform: scale(1.5) translateY(-20%) translateX(-3%);
+  transform: scale(1.2) translateY(-10%) translateX(-2%);
   transform-origin: center top;
 }
 
 .fun-fact-football {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transform-origin: center top;
 }
 
 .fun-fact-engagement {
-  transform: scale(1.2) translateY(5%);
-  transform-origin: center top;
+  transform: scale(1.3);
+  transform-origin: center center;
+  object-position: center 25%;
 }
 
 .fun-fact-tile .about-image-placeholder {
