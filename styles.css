@@ -862,6 +862,7 @@ body.resume-page .site-footer {
   border: 1px solid var(--line);
   border-radius: 2rem;
   padding: 2rem;
+  margin-bottom: 2rem;
   box-shadow: var(--shadow);
 }
 
