@@ -68,18 +68,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const homepageVideoPlayer = document.querySelector('.video-player[data-youtube-url]');
-  if (homepageVideoPlayer) {
-    const youtubeUrl = (homepageVideoPlayer.dataset.youtubeUrl || '').trim();
-    const videoId = extractYouTubeVideoId(youtubeUrl);
-    const iframe = homepageVideoPlayer.querySelector('#homepage-youtube-embed');
-    const placeholder = homepageVideoPlayer.querySelector('#homepage-video-placeholder');
-
-    if (iframe && videoId) {
-      iframe.src = `https://www.youtube.com/embed/${videoId}?rel=0`;
-      if (placeholder) {
-        placeholder.style.display = 'none';
-      }
-    }
-  }
 });
