@@ -146,12 +146,19 @@
           </div>
 
           <div class="video-container-section">
-            <div class="video-player">
-              <div class="video-placeholder">
-                <video controls>
-                  <source src="video/Professional_Persona_Video.mov" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+            <div class="video-player" data-youtube-url="https://youtu.be/gBjceCHh9Yc?si=8nyfLUlbeiOsp2fu">
+              <iframe
+                id="homepage-youtube-embed"
+                title="Professional Persona Video"
+                src=""
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="video-placeholder" id="homepage-video-placeholder">
+                <p>▶</p>
+                <p class="video-placeholder-text">Add your YouTube link to display the video</p>
+                <p class="video-instruction">Edit data-youtube-url in index.html</p>
               </div>
             </div>
           </div>
