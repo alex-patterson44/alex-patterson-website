@@ -1242,8 +1242,8 @@ body.resume-page .site-footer {
 
 #project-3 .project-3-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.55fr);
-  gap: 0.9rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.65fr);
+  gap: 1rem;
   align-items: start;
 }
 
@@ -1253,6 +1253,14 @@ body.resume-page .site-footer {
 
 #project-3 .project-3-text .project-tag {
   margin-bottom: 0.6rem;
+}
+
+#project-3 .project-3-text h2 {
+  margin-bottom: 0.75rem;
+}
+
+#project-3 .skill-box {
+  align-self: start;
 }
 
 /* About Page Styles */
@@ -1573,6 +1581,10 @@ body.resume-page .site-footer {
   .project-item,
   .project-item.reverse,
   .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #project-3 .project-3-layout {
     grid-template-columns: 1fr;
   }
 
