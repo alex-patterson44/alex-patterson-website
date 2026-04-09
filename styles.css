@@ -1169,6 +1169,7 @@ body.resume-page .site-footer {
 
 .projects-hero h1 {
   margin-bottom: 1rem;
+  max-width: 18ch;
 }
 
 .projects-intro {
